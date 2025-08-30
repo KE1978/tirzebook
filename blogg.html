@@ -9,26 +9,44 @@
       color: #C8A24E;
       font-family: Georgia, serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
     }
     h1 {
-      font-size: 2.5rem;
-      letter-spacing: 0.08em;
+      font-size: 2.4rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 1.2rem;
     }
     p {
       color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 2.2rem;
+      text-align: center;
+      max-width: 500px;
+    }
+    a {
+      color: #C8A24E;
       font-size: 1.25rem;
-      margin-top: 2rem;
+      text-decoration: none;
+      border-bottom: 2px solid #C8A24E;
+      transition: color 0.18s, border-bottom 0.18s;
+      padding-bottom: 0.08em;
+    }
+    a:hover {
+      color: #fff;
+      border-bottom: 2px solid #fff;
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1>BLOGG</h1>
-    <p>Daglig blogg kommer snart att läggas upp här.<br>Stay tuned!</p>
-  </div>
+  <h1>Välkommen till Bloggen</h1>
+  <p>Den dagliga bloggen är just nu hostad externt.<br>
+  Klicka på länken nedan för att komma direkt till alla inlägg, dagliga loggar och tankar.</p>
+  <a href="https://tirzebook.blogspot.com/2025/07/valkommen-till-tirzebook.html" target="_blank">
+    Gå till bloggen på Blogger
+  </a>
 </body>
 </html>
