@@ -7,87 +7,31 @@
   <style>
     body {
       background: #000;
-      color: #fff;
+      color: #C8A24E;
       font-family: Georgia, serif;
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 680px;
+      max-width: 700px;
       margin: 0 auto;
-      padding: 1.5rem 1rem 1.5rem 1rem;
+      padding: 2.2rem 1.2rem 2.2rem 1.2rem;
     }
-    h1 {
-      color: #C8A24E;
-      letter-spacing: 0.05em;
-      font-family: Georgia, serif;
-      font-size: 2.1rem;
-      margin: 0 0 1.2rem 0;
-      text-align: left;
-      border-bottom: 2px solid #C8A24E;
-      padding-bottom: 0.4rem;
+    .qa {
+      margin-bottom: 1.4rem;
+      font-size: 1.13rem;
+      line-height: 1.65;
     }
-    .quicklinks {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      gap: 2.2rem;
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1.6rem 0;
-      overflow-x: auto;
-    }
-    .quicklinks li a {
-      color: #C8A24E;
-      font-size: 1.08rem;
-      text-decoration: none;
-      padding: 0.1rem 0.2rem;
-      font-weight: 600;
-      transition: color 0.15s;
-      border-bottom: none;
-      white-space: nowrap;
-    }
-    .quicklinks li a:visited {
-      color: #C8A24E;
-    }
-    .quicklinks li a:hover {
-      color: #fff;
-    }
-    .section {
-      margin-bottom: 1.3rem;
-      padding-bottom: 0.6rem;
-      border-bottom: 1px solid #333;
-    }
-    h2 {
-      color: #C8A24E;
-      font-size: 1.16rem;
+    .question {
       font-weight: bold;
-      letter-spacing: 0.03em;
-      margin: 0 0 0.5rem 0;
-      border-left: 3px solid #C8A24E;
-      padding-left: 0.5rem;
-      background: none;
-      text-align: left;
+      margin-bottom: 0.2rem;
     }
-    .term {
-      color: #C8A24E;
-      font-weight: 600;
-      font-size: 1.01em;
-      margin-right: 0.2em;
+    .answer {
+      margin-left: 1.1rem;
+      margin-bottom: 0.4rem;
+      display: block;
     }
-    a, a:visited {
-      color: #C8A24E;
-      text-decoration: none;
-    }
-    a:hover {
-      color: #fff;
-      text-decoration: none;
-    }
-    ul {
-      margin: 0.2rem 0 0.7rem 1.1rem;
-      padding: 0;
-    }
-    /* Home-knapp i hörnet */
+    /* Home-knapp */
     .home-logo {
       position: fixed;
       bottom: 24px;
@@ -103,57 +47,95 @@
       filter: drop-shadow(0 0 8px #C8A24E);
       cursor: pointer;
     }
-    @media (max-width: 700px) {
-      .container { max-width: 99vw; padding: 0.7rem; }
-      .quicklinks { gap: 1.1rem; font-size: 0.99rem; }
-      h1 { font-size: 1.4rem; }
-      h2 { font-size: 1.01rem; }
-    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Tirzepedia</h1>
-    <ul class="quicklinks">
-      <li><a href="#begrepp">Begrepp & Termer</a></li>
-      <li><a href="#forskning">Forskning & Källor</a></li>
-      <li><a href="#faq">Vanliga Frågor</a></li>
-      <li><a href="#lifehacks">Lifehacks & Tips</a></li>
-      <li><a href="#slang">Slang / Ordbok</a></li>
-    </ul>
+    <h1 style="margin-bottom:2.5rem;">Tirzepedia</h1>
 
-    <div class="section" id="begrepp">
-      <h2>Begrepp & Termer</h2>
-      <p><span class="term">GLP‑1:</span> Hormon som sänker aptiten och stabiliserar blodsocker.</p>
-      <p><span class="term">LISS:</span> Low Intensity Steady State. Långsam, jämn cardio – t.ex. powerwalk.</p>
+    <div class="qa">
+      <span class="question">Vad är GLP‑1?</span>
+      <span class="answer">Ett hormon som sänker hunger och stabiliserar blodsocker. Tirzepatid aktiverar denna effekt.</span>
     </div>
-
-    <div class="section" id="forskning">
-      <h2>Forskning & Källor</h2>
-      <ul>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/36826641/" target="_blank">Studie om GLP‑1 och fettförlust</a></li>
-        <li>Mer forskning läggs till här…</li>
-      </ul>
+    <div class="qa">
+      <span class="question">Vad innebär 22:2?</span>
+      <span class="answer">22 timmar fasta, 2 timmar ätfönster. Minimalistisk variant av OMAD.</span>
     </div>
-
-    <div class="section" id="faq">
-      <h2>Vanliga Frågor</h2>
-      <p><span class="term">Är GLP‑1 farligt?</span> Nej, men ska alltid tas enligt ordination. Läs mer hos Läkemedelsverket.</p>
-      <p><span class="term">Måste man fasta?</span> Nej, men protokollet bygger på fasta för maximal effekt.</p>
+    <div class="qa">
+      <span class="question">Måste man fasta?</span>
+      <span class="answer">Nej. Men effekten maximeras med fasta, eftersom insulin hålls lågt och fettmobiliseringen ökar.</span>
     </div>
-
-    <div class="section" id="lifehacks">
-      <h2>Lifehacks & Tips</h2>
-      <ul>
-        <li>Spela in vikt/loggar med Polar Flow eller Apple Health.</li>
-        <li>“MonsterLISS” på onsdagar = gamechanger.</li>
-      </ul>
+    <div class="qa">
+      <span class="question">Hur snabbt går man ner i vikt?</span>
+      <span class="answer">De flesta tappar 0.7–1.2 kg/vecka de första månaderna, men resultaten varierar.</span>
     </div>
-
-    <div class="section" id="slang">
-      <h2>Slang / Ordbok</h2>
-      <p><span class="term">Balkongsurr:</span> Onsdagspost, ofta rant- eller dagboksformat.</p>
-      <p><span class="term">MonsterLISS:</span> Extra lång powerwalk, ofta 17+ km.</p>
+    <div class="qa">
+      <span class="question">Är GLP‑1 farligt?</span>
+      <span class="answer">Nej, men det är ett läkemedel och ska tas enligt ordination. Läs mer hos Läkemedelsverket.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Vad är LISS?</span>
+      <span class="answer">Low Intensity Steady State – långsam, jämn cardio, t.ex. promenad eller cykling.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Vad är “MonsterLISS”?</span>
+      <span class="answer">En extra lång LISS-promenad på minst 16–18 km, oftast på dosdagen.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Varför är fettmobilisering viktig?</span>
+      <span class="answer">Kroppen byter bränsle till fett när insulin är lågt. Det ger renare viktnedgång.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Kan man äta kolhydrater?</span>
+      <span class="answer">Ja, men resultatet blir stabilare och snabbare med lågt intag av snabba kolhydrater.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Hur mäter man resultat?</span>
+      <span class="answer">Daglig vikt, måttband (midja, navel, lår), samt logg av steg och LISS i valfri app.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Vad är “Setpoint”?</span>
+      <span class="answer">Kroppens “default-läge” för vikt. Går att sänka genom långvarig viktnedgång utan avbrott.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Behöver man proteinpulver?</span>
+      <span class="answer">Nej. Animaliskt protein och ägg räcker långt, men kan användas för att toppa intaget.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Kan man träna styrka?</span>
+      <span class="answer">Ja, men lågintensiv cardio är basen i protokollet. Styrketräning är bonus, inte krav.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Hur loggar man maten enklast?</span>
+      <span class="answer">Använd Lifesum, MyFitnessPal eller skriv in allt i Notes/Excel. Huvudsaken är daglig rutin.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Vad är dosfönstret?</span>
+      <span class="answer">De första 12–48 timmarna efter injektion, då fettmobiliseringen och hungerbromsen är som starkast.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Varför känns hungern så låg?</span>
+      <span class="answer">GLP‑1 och GIP bromsar hunger och belöningssystem, särskilt under fasta och direkt efter dos.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Hur undviker man platåer?</span>
+      <span class="answer">Fasta rutiner, håll samma kalori- och proteinintag varje dag. Byt aldrig strategi mitt i perioden.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Hur lång är en typisk protokollperiod?</span>
+      <span class="answer">12 veckor. De flesta får bäst resultat av att köra obrutet 10–12 veckor, följt av utvärdering och ev. underhåll.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Vad är viktigast att tracka?</span>
+      <span class="answer">1. Steg, 2. LISS-kilometer, 3. Daglig vikt, 4. Protein (gram/dag).</span>
+    </div>
+    <div class="qa">
+      <span class="question">Vad är “Balkongsurr”?</span>
+      <span class="answer">Onsdagspost i bloggen, där det ofta ventileras frustration, tankar och personliga insikter.</span>
+    </div>
+    <div class="qa">
+      <span class="question">Vad gör jag när motivationen sviktar?</span>
+      <span class="answer">Påminn dig om varför du startade, läs gamla loggar och kontakta någon som stöttar dig. Momentum slår motivation – alltid.</span>
     </div>
   </div>
   <a href="/" class="home-logo">
@@ -161,69 +143,3 @@
   </a>
 </body>
 </html>
-YPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Tirzepedia</title>
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <style>
-    body {
-      background: #000;
-      color: #fff;
-      font-family: Georgia, serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 1.5rem 1rem 1.5rem 1rem;
-    }
-    h1 {
-      color: #C8A24E;
-      letter-spacing: 0.05em;
-      font-family: Georgia, serif;
-      font-size: 2.1rem;
-      margin: 0 0 1.2rem 0;
-      text-align: left;
-      border-bottom: 2px solid #C8A24E;
-      padding-bottom: 0.4rem;
-    }
-    .quicklinks {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      gap: 2.2rem;
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1.6rem 0;
-      overflow-x: auto;
-    }
-    .quicklinks li a {
-      color: #C8A24E;
-      font-size: 1.08rem;
-      text-decoration: none;
-      padding: 0.1rem 0.2rem;
-      font-weight: 600;
-      transition: color 0.15s;
-      border-bottom: none;
-      white-space: nowrap;
-    }
-    .quicklinks li a:visited {
-      color: #C8A24E;
-    }
-    .quicklinks li a:hover {
-      color: #fff;
-    }
-    .section {
-      margin-bottom: 1.3rem;
-      padding-bottom: 0.6rem;
-      border-bottom: 1px solid #333;
-    }
-    h2 {
-      color: #C8A24E;
-      font-size: 1.16rem;
-      font-weight: bold;
-      letter-spacing: 0.03em;
-      margin: 0 0 0.5rem
