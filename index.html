@@ -10,14 +10,16 @@
       background-color: #000;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       font-family: Georgia, serif;
       color: #fff;
     }
+
+    /* Top navigation */
     .main-index {
-      margin-bottom: 2.2rem;
+      margin: 2.2rem 0;
       display: flex;
       flex-direction: row;
       gap: 3.5rem;
@@ -37,11 +39,35 @@
       color: #E0E0E0;
       border-bottom: 3px solid #E0E0E0;
     }
-    img {
+
+    /* Logo */
+    .logo {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .logo img {
       display: block;
-      width: auto;
+      max-width: 400px; /* justera storleken om du vill */
       height: auto;
       margin: 0 auto;
+    }
+
+    /* Contact under logo */
+    .contact-link {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    .contact-link a {
+      color: #C8A24E;
+      font-size: 1.6rem;
+      text-decoration: none;
+      border-bottom: 3px solid #C8A24E;
+      padding-bottom: 0.15rem;
+      transition: color 0.2s, border-bottom 0.2s;
+    }
+    .contact-link a:hover {
+      color: #E0E0E0;
+      border-bottom: 3px solid #E0E0E0;
     }
   </style>
 </head>
@@ -49,15 +75,15 @@
   <nav class="main-index">
     <a href="https://tirzebook.blogspot.com" target="_blank">Tirzeblog</a>
     <a href="tirzebook.html">Tirzebook</a>
-    <a href="contact.html">Contact</a>
+    <a href="tirzegram.html">Tirzegram</a>
     <a href="about.html">About</a>
   </nav>
-  <img src="22_2.jpg" alt="22:2">
+
+  <div class="logo">
+    <img src="22_2.jpg" alt="22:2">
+    <div class="contact-link">
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
 </body>
 </html>
-
-
-
-
-
-
