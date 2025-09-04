@@ -3,13 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>Tirzepedia</title>
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <style>
     body {
       background: #000;
+      color: #fff;
+      font-family: Georgia, serif;
       margin: 0;
-      height: 100vh;
+      padding: 0 0 4rem 0;
     }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 1rem 1rem 1rem;
+    }
+    h1, h2 {
+      color: #C8A24E;
+      letter-spacing: 0.05em;
+      font-family: Georgia, serif;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2.2rem;
+      text-align: left;
+      border-left: 4px solid #C8A24E;
+      padding-left: 0.8rem;
+      margin-left: 0;
+    }
+    ul.quicklinks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+    ul.quicklinks li a {
+      color: #C8A24E;
+      font-size: 1rem;
+      text-decoration: none;
+      border-bottom: 1px dashed #C8A24E;
+      transition: color 0.2s;
+    }
+    ul.quicklinks li a:hover {
+      color: #fff;
+      border-bottom: 1px dashed #fff;
+    }
+    .section {
+      margin-bottom: 2.2rem;
+    }
+    .term {
+      color: #C8A24E;
+      font-weight: bold;
+    }
+    /* Home-knapp i hörnet */
     .home-logo {
       position: fixed;
       bottom: 24px;
@@ -28,6 +79,53 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Tirzepedia</h1>
+    <ul class="quicklinks">
+      <li><a href="#begrepp">Begrepp & Termer</a></li>
+      <li><a href="#forskning">Forskning & Källor</a></li>
+      <li><a href="#faq">Vanliga Frågor</a></li>
+      <li><a href="#lifehacks">Lifehacks & Tips</a></li>
+      <li><a href="#slang">Slang / Ordbok</a></li>
+    </ul>
+
+    <div class="section" id="begrepp">
+      <h2>Begrepp & Termer</h2>
+      <p><span class="term">GLP‑1:</span> Hormon som sänker aptiten och stabiliserar blodsocker.</p>
+      <p><span class="term">LISS:</span> Low Intensity Steady State. Långsam, jämn cardio – t.ex. powerwalk.</p>
+      <!-- Lägg till fler termer här -->
+    </div>
+
+    <div class="section" id="forskning">
+      <h2>Forskning & Källor</h2>
+      <ul>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/36826641/" target="_blank">Studie om GLP‑1 och fettförlust</a></li>
+        <li>Mer forskning läggs till här…</li>
+      </ul>
+    </div>
+
+    <div class="section" id="faq">
+      <h2>Vanliga Frågor</h2>
+      <p><b>Är GLP‑1 farligt?</b> Nej, men ska alltid tas enligt ordination. Läs mer hos Läkemedelsverket.</p>
+      <p><b>Måste man fasta?</b> Nej, men protokollet bygger på fasta för maximal effekt.</p>
+      <!-- Lägg till fler frågor och svar -->
+    </div>
+
+    <div class="section" id="lifehacks">
+      <h2>Lifehacks & Tips</h2>
+      <ul>
+        <li>Spela in vikt/loggar med Polar Flow eller Apple Health.</li>
+        <li>“MonsterLISS” på onsdagar = gamechanger.</li>
+      </ul>
+    </div>
+
+    <div class="section" id="slang">
+      <h2>Slang / Ordbok</h2>
+      <p><span class="term">Balkongsurr:</span> Onsdagspost, ofta rant- eller dagboksformat.</p>
+      <p><span class="term">MonsterLISS:</span> Extra lång powerwalk, ofta 17+ km.</p>
+      <!-- Lägg till fler egna begrepp -->
+    </div>
+  </div>
   <a href="/" class="home-logo">
     <img src="/22_2.jpg" alt="22:2 logo" style="width:100%;height:100%;">
   </a>
