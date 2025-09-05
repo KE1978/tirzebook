@@ -11,12 +11,13 @@ body {
   min-height: 100vh;
 }
 
-/* ---- Navigation (2x2 grid) ---- */
+/* ---- Navigation ---- */
+/* Desktop: länkar på rad */
 nav.main-index {
-  display: grid;
-  grid-template-columns: repeat(2, auto); /* två kolumner */
-  justify-content: center;                /* mitten */
-  gap: 1rem 2.5rem;                       /* radavstånd / kolumnavstånd */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   margin: 20px 0;
 }
 
@@ -58,13 +59,20 @@ hr {
 }
 
 /* ---- Mobilanpassning ---- */
+/* Mobil: länkar i 2x2 grid */
 @media (max-width: 768px) {
   nav.main-index {
-    gap: 0.8rem 1.5rem;
-    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 1rem 2.5rem;
+    margin: 20px 0;
   }
 
-  nav.main-index a { font-size: 1.1rem; }
+  nav.main-index a {
+    font-size: 1.1rem;
+  }
+
   h1 { font-size: 1rem; }
   h2 { font-size: 0.95rem; }
   h3 { font-size: 0.9rem; }
