@@ -68,29 +68,55 @@ hr {
 /* ---- Mobilanpassning ---- */
 @media (max-width: 768px) {
   body {
-    padding: 0.7rem 0.5rem 1.2rem;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0.7rem 0.5rem 1.2rem !important;
   }
 
   nav {
-    gap: 1rem;
-    margin: 1rem 0;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    flex-wrap: wrap !important;
+    margin: 1rem 0 !important;
+    width: 100% !important;
   }
 
   nav a {
-    font-size: 1.1rem;
-    padding: 0.4rem 0.6rem;
+    font-size: 1.1rem !important;
+    padding: 0.4rem 0.6rem !important;
+    text-align: center !important;
+    display: inline-block !important;
+    width: auto !important;
   }
 
   .logo {
-    max-width: 95vw;
-    margin: 0 auto;
+    max-width: 95vw !important;
+    margin: 0 auto !important;
+    display: block !important;
   }
 
-  h1 { font-size: 1rem; }
-  h2 { font-size: 0.95rem; }
-  h3 { font-size: 0.9rem; }
+  h1 { font-size: 1rem !important; }
+  h2 { font-size: 0.95rem !important; }
+  h3 { font-size: 0.9rem !important; }
 
   p, li {
-    font-size: 0.95rem;
+    font-size: 0.95rem !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  ul, ol {
+    margin: 1rem auto !important;
+    padding-left: 1.1rem !important;
+    text-align: center !important;
+  }
+
+  hr {
+    margin: 1rem 0 !important;
+    width: 80% !important;
   }
 }
