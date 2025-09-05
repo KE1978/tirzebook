@@ -6,11 +6,11 @@
     padding: 0 !important;
     margin: 0 !important;
   }
-  .main-index {
+ .main-index {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem 0rem;
-    margin: 3rem 0 0.1rem 0;
+    margin: 3rem 0 0.1rem auto;
     max-width: 270PX;
     box-sizing: border-box;
   }
