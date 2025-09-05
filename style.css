@@ -1,15 +1,21 @@
+/* ---- Grund ---- */
 body {
   margin: 0;
   background-color: #000;
   font-family: Georgia, serif;
   color: #C8A24E;
-  text-align: center;   /* ALL text centrerad */
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* mitten horisontellt */
+  text-align: center;    /* all text i mitten */
+  min-height: 100vh;
 }
 
-/* Navigation */
+/* ---- Navigation ---- */
 nav {
   display: flex;
-  justify-content: center;   /* centrera länkarna */
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   margin: 20px 0;
   flex-wrap: wrap;
@@ -22,15 +28,15 @@ nav a {
   text-align: center;
 }
 
-/* Logga */
+/* ---- Logga ---- */
 .logo {
   max-width: 98vw;
   height: auto;
   display: block;
-  margin: 0 auto;   /* centrerad, ingen luft under */
+  margin: 0 auto;   /* ingen luft under loggan */
 }
 
-/* Rubriker */
+/* ---- Rubriker ---- */
 h1, h2, h3 {
   margin: 1rem 0;
   line-height: 1.2;
@@ -41,7 +47,7 @@ h1 { font-size: 1.13rem; }
 h2 { font-size: 1.05rem; }
 h3 { font-size: 1rem; }
 
-/* Text */
+/* ---- Text ---- */
 p, li {
   font-size: 1rem;
   line-height: 1.6;
@@ -50,11 +56,4 @@ p, li {
 }
 
 ul, ol {
-  margin: 1rem auto;
-  padding-left: 1.1rem;  /* för punktlistor */
-}
-
-hr {
-  margin: 1.1rem 0;
-  width: 80%;
-}
+  margin: 1rem
