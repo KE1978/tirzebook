@@ -1,46 +1,44 @@
 body {
   margin: 0;
   background-color: #000;
+  font-family: Georgia, serif;
+  color: #C8A24E;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  font-family: Georgia, serif;
-  color: #C8A24E;
-  text-align: center; /* tvingar centrerad text som fallback */
 }
 
 /* Navigation */
 nav {
   display: flex;
-  justify-content: center;   /* centrerar länkarna */
-  align-items: center;
-  gap: 2rem;                 /* avstånd mellan länkarna */
-  margin-top: 20px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;           /* radbryt snyggt om det blir för trångt */
+  justify-content: center;
+  gap: 2rem;
+  margin: 20px 0 20px 0; /* bara luft kring menyn */
+  flex-wrap: wrap;
 }
 
 nav a {
   color: #C8A24E;
   text-decoration: none;
   font-size: 1.2rem;
-  text-align: center;        /* extra säkerhet */
+  text-align: center;
 }
 
-/* Logga / bild */
+/* Logga */
 .logo, img {
   max-width: 98vw;
   height: auto;
-  margin: 1rem auto;
+  margin: 0 auto;    /* centrerad */
   display: block;
 }
 
 /* Rubriker */
 h1, h2, h3 {
-  text-align: center;
   margin: 1rem 0;
   line-height: 1.2;
+  text-align: center;
 }
 
 h1 { font-size: 1.13rem; }
@@ -51,4 +49,62 @@ h3 { font-size: 1rem; }
 p, li {
   font-size: 1rem;
   line-height: 1.6;
-  te
+  margin: 0.8rem 0;
+  text-align: center;
+}
+
+ul, ol {
+  margin: 1rem auto;
+  padding-left: 1.1rem;
+}
+
+hr {
+  margin: 1.1rem 0;
+  width: 80%;
+}
+
+/* 🔽 Mobilanpassning */
+@media (max-width: 768px) {
+  body {
+    padding: 0.7rem 0.5rem 1.2rem 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+  }
+
+  .logo, img {
+    max-width: 95vw;
+    margin: 0 auto;   /* ingen extra luft alls under loggan */
+    display: block;
+  }
+
+  h1 { font-size: 1rem; }
+  h2 { font-size: 0.95rem; }
+  h3 { font-size: 0.9rem; }
+
+  p, li {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  ul, ol {
+    padding-left: 1rem;
+    margin: 1rem auto;
+  }
+
+  hr {
+    margin: 1rem 0;
+  }
+}
