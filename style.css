@@ -3,13 +3,13 @@ body {
   background-color: #000;
   font-family: Georgia, serif;
   color: #C8A24E;
-  text-align: center;
+  text-align: center;   /* ALL text centrerad */
 }
 
 /* Navigation */
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: center;   /* centrera länkarna */
   gap: 2rem;
   margin: 20px 0;
   flex-wrap: wrap;
@@ -19,6 +19,7 @@ nav a {
   color: #C8A24E;
   text-decoration: none;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 /* Logga */
@@ -26,11 +27,34 @@ nav a {
   max-width: 98vw;
   height: auto;
   display: block;
-  margin: 0 auto; /* ingen luft under loggan */
+  margin: 0 auto;   /* centrerad, ingen luft under */
 }
 
+/* Rubriker */
+h1, h2, h3 {
+  margin: 1rem 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h1 { font-size: 1.13rem; }
+h2 { font-size: 1.05rem; }
+h3 { font-size: 1rem; }
+
 /* Text */
-p {
-  margin: 0.8rem 0;
+p, li {
   font-size: 1rem;
+  line-height: 1.6;
+  margin: 0.8rem 0;
+  text-align: center;
+}
+
+ul, ol {
+  margin: 1rem auto;
+  padding-left: 1.1rem;  /* för punktlistor */
+}
+
+hr {
+  margin: 1.1rem 0;
+  width: 80%;
 }
