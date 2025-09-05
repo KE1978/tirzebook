@@ -12,18 +12,19 @@ body {
 }
 
 /* ---- Navigation (2x2 grid) ---- */
-nav {
+nav.main-index {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: center;
-  gap: 1rem 2.5rem;
+  grid-template-columns: repeat(2, auto); /* två kolumner */
+  justify-content: center;                /* mitten */
+  gap: 1rem 2.5rem;                       /* radavstånd / kolumnavstånd */
   margin: 20px 0;
 }
 
-nav a {
+nav.main-index a {
   color: #C8A24E;
   text-decoration: none;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 /* ---- Logga ---- */
@@ -58,12 +59,12 @@ hr {
 
 /* ---- Mobilanpassning ---- */
 @media (max-width: 768px) {
-  nav {
+  nav.main-index {
     gap: 0.8rem 1.5rem;
     margin: 1rem 0;
   }
 
-  nav a { font-size: 1.1rem; }
+  nav.main-index a { font-size: 1.1rem; }
   h1 { font-size: 1rem; }
   h2 { font-size: 0.95rem; }
   h3 { font-size: 0.9rem; }
