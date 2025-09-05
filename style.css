@@ -1,67 +1,6 @@
-/* ---- Grund ---- */
-body {
-  margin: 0;
-  background-color: #000;
-  font-family: Georgia, serif;
-  color: #C8A24E;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-}
-
-/* ---- Navigation ---- */
-/* Desktop: länkar på rad */
-nav.main-index {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 20px 0;
-}
-
-nav.main-index a {
-  color: #C8A24E;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-/* ---- Logga ---- */
-.logo {
-  max-width: 95vw;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* ---- Rubriker ---- */
-h1, h2, h3 {
-  margin: 1rem 0;
-  line-height: 1.2;
-}
-
-h1 { font-size: 1.13rem; }
-h2 { font-size: 1.05rem; }
-h3 { font-size: 1rem; }
-
-/* ---- Text ---- */
-p, li {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0.8rem 0;
-}
-
-hr {
-  margin: 1.1rem 0;
-  width: 80%;
-}
-
 /* ---- Mobilanpassning ---- */
-/* Mobil: länkar i 2x2 grid */
 @media (max-width: 768px) {
-  nav.main-index {
+  .main-index {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: center;
@@ -69,12 +8,21 @@ hr {
     margin: 20px 0;
   }
 
-  nav.main-index a {
-    font-size: 1.1rem;
+  .main-index a {
+    font-size: 1.2rem;   /* mobil-storlek */
+    text-align: center;
   }
 
-  h1 { font-size: 1rem; }
-  h2 { font-size: 0.95rem; }
-  h3 { font-size: 0.9rem; }
-  p, li { font-size: 0.95rem; }
+  .logo img {
+    max-width: 95vw;
+    height: auto;
+    margin: 1.5rem auto 1rem auto;
+    display: block;
+  }
+
+  .footer-symbol {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
 }
