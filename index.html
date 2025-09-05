@@ -59,38 +59,31 @@
     }
     @media (max-width: 768px) {
   .main-index {
-    flex-direction: column !important;
-    align-items: center !important;   /* mitten */
-    gap: 1rem !important;
-    width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 1rem 2.5rem;
+    margin: 20px 0;
   }
 
   .main-index a {
-    font-size: 1.2rem !important;
-    padding: 0.45rem 0 !important;
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;   /* mitten */
-    letter-spacing: 0.04em !important;
+    text-align: center;
   }
 
   .logo img {
-    max-width: 98vw !important;
-    height: auto !important;
-    margin: 1.5rem auto 1rem auto !important;
-    display: block !important;
+    max-width: 95vw;
+    height: auto;
+    margin: 1.5rem auto 1rem auto;
+    display: block;
   }
 
   .footer-symbol {
-    font-size: 1rem !important;
-    margin-top: 1rem !important;
-    text-align: center !important;   /* mitten */
+    margin-top: 1rem;
+    text-align: center;
   }
 }
 
-  </style>
+     </style>
 </head>
 <body>
   <nav class="main-index">
@@ -108,6 +101,7 @@
   </div>
 </body>
 </html>
+
 
 
 
