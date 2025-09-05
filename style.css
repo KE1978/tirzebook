@@ -6,41 +6,38 @@ body {
   color: #C8A24E;
   display: flex;
   flex-direction: column;
-  align-items: center;   /* mitten horisontellt */
-  text-align: center;    /* all text i mitten */
+  align-items: center;
+  text-align: center;
   min-height: 100vh;
 }
 
-/* ---- Navigation ---- */
+/* ---- Navigation (2x2 grid) ---- */
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  gap: 1rem 2.5rem;
   margin: 20px 0;
-  flex-wrap: wrap;
 }
 
 nav a {
   color: #C8A24E;
   text-decoration: none;
   font-size: 1.2rem;
-  text-align: center;
 }
 
 /* ---- Logga ---- */
 .logo {
-  max-width: 98vw;
+  max-width: 95vw;
   height: auto;
   display: block;
-  margin: 0 auto;   /* ingen luft under loggan */
+  margin: 0 auto;
 }
 
 /* ---- Rubriker ---- */
 h1, h2, h3 {
   margin: 1rem 0;
   line-height: 1.2;
-  text-align: center;
 }
 
 h1 { font-size: 1.13rem; }
@@ -52,12 +49,6 @@ p, li {
   font-size: 1rem;
   line-height: 1.6;
   margin: 0.8rem 0;
-  text-align: center;
-}
-
-ul, ol {
-  margin: 1rem auto;
-  padding-left: 1.1rem; /* behåller punktindrag */
 }
 
 hr {
@@ -67,56 +58,14 @@ hr {
 
 /* ---- Mobilanpassning ---- */
 @media (max-width: 768px) {
-  body {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    padding: 0.7rem 0.5rem 1.2rem !important;
-  }
-
   nav {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 1rem !important;
-    flex-wrap: wrap !important;
-    margin: 1rem 0 !important;
-    width: 100% !important;
+    gap: 0.8rem 1.5rem;
+    margin: 1rem 0;
   }
 
-  nav a {
-    font-size: 1.1rem !important;
-    padding: 0.4rem 0.6rem !important;
-    text-align: center !important;
-    display: inline-block !important;
-    width: auto !important;
-  }
-
-  .logo {
-    max-width: 95vw !important;
-    margin: 0 auto !important;
-    display: block !important;
-  }
-
-  h1 { font-size: 1rem !important; }
-  h2 { font-size: 0.95rem !important; }
-  h3 { font-size: 0.9rem !important; }
-
-  p, li {
-    font-size: 0.95rem !important;
-    text-align: center !important;
-    width: 100% !important;
-  }
-
-  ul, ol {
-    margin: 1rem auto !important;
-    padding-left: 1.1rem !important;
-    text-align: center !important;
-  }
-
-  hr {
-    margin: 1rem 0 !important;
-    width: 80% !important;
-  }
+  nav a { font-size: 1.1rem; }
+  h1 { font-size: 1rem; }
+  h2 { font-size: 0.95rem; }
+  h3 { font-size: 0.9rem; }
+  p, li { font-size: 0.95rem; }
 }
